@@ -4,6 +4,7 @@ from panel import Column
 from panel.template import FastListTemplate
 from panel.widgets import IntInput, StaticText, Tabulator
 
+
 class GUI():
     
     def __init__(self):
@@ -53,6 +54,7 @@ def main():
         main=Column(gui.precision, gui.tabulator, wikipedia)
     )
     template.show()
+
 
 if __name__ == '__main__':
     main()
