@@ -53,21 +53,17 @@ class App():
         self.select.param.watch(self.select_callback, 'value')
         self.multiselect.param.watch(self.multiselect_callback, 'value')
     
-
     def reset_select(self, event):
         self.select.value = select_widget_options[0]
         self.multiselect.options = []
 
-
     def reset_multiselect(self, event):
         self.multiselect.value = []
     
-
     def select_callback(self, event):
         self.widget_values.objects[0].objects[0].value = self.select.value
         self.multiselect.options = dictionary[self.select.value]
     
-
     def multiselect_callback(self, event):
         self.widget_values.objects[1].objects[0].value = self.multiselect.value
 
