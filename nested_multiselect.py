@@ -19,6 +19,7 @@ dictionary = {
 select_widget_options = list(dictionary.keys())
 
 class App():
+
     
     def __init__(self):
         self.select = Select(
